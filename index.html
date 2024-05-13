@@ -24,14 +24,113 @@
         font-size: 20px;
     }
     .text{
-        width: 400px;
         height: 50px;
-        margin: 20px  350px;
+        width: 400px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 5%;
+        margin: 5px 300px;
+        display: inline;
+
     }
-    .icon{
+    .search-icon{
         height: 30px;
-        margin-left: 10px;
+        display: inline;
+        margin-top: 30px;
     }
+    /* .card{
+    display:flex;
+}
+.card1{
+    height: 350px;
+    width: 350px;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 40px 17px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;   
+    padding: 10px;
+    }
+.card1img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+       
+} */
+    .card{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .card1{
+        height: 350px;
+        width: 350px;
+        background-color: lightgray;
+        border-radius: 3px;
+        margin: 40px 17px;
+        padding: 10px;
+        position: relative;
+        }
+    .card1img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+           top: 4%;
+           left: 40%;      
+    }
+   .name{
+       top: 30%;
+       position:absolute;
+       left: 40%;
+       margin: 10px 0px;
+       background-color: transparent;
+   }
+   .off{
+    position: absolute;
+       top:40%;
+       left: 36%;
+       background-color: transparent;
+       margin: 20px 0px;
+ }
+ .rupee{
+    position: absolute;
+    color:darkorange;
+    font-size: 50px;
+    background-color: transparent;
+    top: 55%;
+    left: 33%;
+    font-weight: bolder;
+ }
+ .btn{
+    position: absolute;
+    left: 35%;
+    top: 75%;
+    border: none;
+    height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(82, 60, 193);
+    background-color: tomato;
+    font-weight: bolder;
+ }
+ .search{
+    top: 0px;
+    position: sticky;
+    z-index: 2;
+ }
+ .callnow{
+    height: 40px;
+    width: 400px;
+    position: fixed;
+    background-color: deepskyblue;
+    color: tomato;
+    bottom: 5px;
+    left: 35%;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+ }
 </style>
 <body>
     <div class="navbar">
@@ -40,9 +139,56 @@
         <span class="nav-name">Your Order</span>
         <span class="nav-name">Acount</span> 
     </div>
-    <div>
-        <input class="text" placeholder="Search for Food" type="text" ><img class="icon" src="./search.png">
+    <div class="search"> 
+        <input class="text" type="text" placeholder="Search a Food" />
+        <img class="search-icon" src="./search.png"/> 
     </div>
-   
+    <div class="card">
+        <div class="card1">
+            <img class="card1img" src="./Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.webp"/>
+           <h1 class="name" > Cake</h1>
+           <h3 class="off">Get 40% Off</h3>
+           <p class="rupee">₹ 499/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        <div class="card1">
+            <img class="card1img" src="./download (1).jpeg"/>
+           <h1 class="name" > Burger</h1>
+           <h3 class="off">Get 30% Off</h3>
+           <p class="rupee">₹ 299/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        <div class="card1">
+            <img class="card1img" src="./download (2).jpeg"/>
+           <h1 class="name" >Sandwith</h1>
+           <h3 class="off">Get 40% Off</h3>
+           <p class="rupee">₹ 499/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        <div class="card1">
+            <img class="card1img" src="./images (1).jpeg"/>
+           <h1 class="name" > Hot Coffee</h1>
+           <h3 class="off">Get 40% Off</h3>
+           <p class="rupee">₹ 499/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        <div class="card1">
+            <img class="card1img" src="./images (2).jpeg"/>
+           <h1 class="name" >Cold Coffee</h1>
+           <h3 class="off">Get 40% Off</h3>
+           <p class="rupee">₹ 499/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        <div class="card1">
+            <img class="card1img" src="./images.jpeg"/>
+           <h1 class="name" > Pestry</h1>
+           <h3 class="off">Get 40% Off</h3>
+           <p class="rupee">₹ 499/-</p>
+           <button class="btn">Order Now</button>
+        </div>
+        
+       
+    </div>
+    
 </body>
 </html>
